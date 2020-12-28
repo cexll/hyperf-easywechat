@@ -5,14 +5,14 @@
 
 ## 安装
 ~~~shell script
-composer require naixiaoxin/hyperf-wechat
+composer require cexll/hyperf-wechat
 ~~~
 
 
 ## 配置
 1. 发布配置文件
 ~~~shell script
-php ./bin/hyperf.php vendor:publish naixiaoxin/hyperf-wechat
+php ./bin/hyperf.php vendor:publish cexll/hyperf-wechat
 ~~~
 2. 修改应用根目录下的 `config/autoload/wechat.php` 中对应的参数即可。
 3. 每个模块基本都支持多账号，默认为 `default`。
@@ -41,8 +41,8 @@ namespace App\Controller;
 use EasyWeChat\Kernel\Exceptions\BadRequestException;
 use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
 use EasyWeChat\Kernel\Exceptions\InvalidConfigException;
-use Naixiaoxin\HyperfWechat\EasyWechat;
-use Naixiaoxin\HyperfWechat\Helper;
+use Cexll\HyperfWechat\EasyWechat;
+use Cexll\HyperfWechat\Helper;
 use ReflectionException;
 
 class WeChatController extends AbstractController
@@ -69,14 +69,14 @@ class WeChatController extends AbstractController
 }
 ```
 
-> 上面例子里的 在return的时候必须调用``Naixiaoxin\HyperfWechat\Helper::Response``去转换，否则会报错。
+> 上面例子里的 在return的时候必须调用``Cexll\HyperfWechat\Helper::Response``去转换，否则会报错。
 
 ### 我们有以下方式获取 SDK 的服务实例
 
 ##### 使用外观
 
 ```php
-  use \Naixiaoxin\HyperfWechat\EasyWechat;
+  use \Cexll\HyperfWechat\EasyWechat;
   $officialAccount = EasyWechat::officialAccount(); // 公众号
   $work = EasyWechat::work(); // 企业微信
   $payment = EasyWechat::payment(); // 微信支付

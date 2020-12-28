@@ -1,5 +1,5 @@
 {
-    "name": "naixiaoxin/hyperf-wechat",
+    "name": "cexll/hyperf-wechat-my",
     "type": "library",
     "license": "MIT",
     "keywords": [
@@ -10,7 +10,7 @@
     "description": "Wechat SDK For Hyperf",
     "autoload": {
         "psr-4": {
-            "Naixiaoxin\\HyperfWechat\\": "src/"
+            "Cexll\\HyperfWechat\\": "src/"
         }
     },
     "autoload-dev": {

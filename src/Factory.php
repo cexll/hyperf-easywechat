@@ -9,7 +9,6 @@ declare(strict_types=1);
  * @contact  group@hyperf.io
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
-
 namespace Naixiaoxin\HyperfWechat;
 
 use Hyperf\Contract\ConfigInterface;
@@ -69,7 +68,7 @@ class Factory
     {
         $accountName = $args[0] ?? 'default';
         $accountConfig = $args[1] ?? [];
-        if (!isset($this->configMap[$functionName])) {
+        if (! isset($this->configMap[$functionName])) {
             throw new \Exception('方法不存在');
         }
         $configName = $this->configMap[$functionName];
