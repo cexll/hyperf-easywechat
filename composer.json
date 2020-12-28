@@ -19,8 +19,8 @@
         }
     },
     "require": {
-        "php": ">=7.2",
-        "ext-swoole": ">=4.4",
+        "php": ">=7.3",
+        "ext-swoole": ">=4.5",
         "hyperf/guzzle": "~1.1.0|~2.1.0",
         "hyperf/super-globals": "~1.1.0|~2.1.0",
         "overtrue/wechat": "^4.2"
@@ -41,7 +41,7 @@
     },
     "extra": {
         "hyperf": {
-            "config": "Naixiaoxin\\HyperfWechat\\ConfigProvider"
+            "config": "Cexll\\HyperfWechat\\ConfigProvider"
         }
     }
 }
