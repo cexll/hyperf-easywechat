@@ -9,7 +9,7 @@ declare(strict_types=1);
  * @contact  group@hyperf.io
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
-namespace Naixiaoxin\HyperfWechat;
+namespace Cexll\HyperfWechat;
 
 use Hyperf\Contract\ConfigInterface;
 use Hyperf\Guzzle\CoroutineHandler;
@@ -96,7 +96,6 @@ class Factory
     private function getRequest(): Request
     {
         $request = $this->container->get(RequestInterface::class);
-        //return $this->container->get(RequestInterface::class);
         $uploadFiles = $request->getUploadedFiles() ?? [];
         $files = [];
         foreach ($uploadFiles as $k => $v) {
@@ -109,7 +108,6 @@ class Factory
             $request->getCookieParams(),
             $files,
             $request->getServerParams(),
-//             is_array($_SERVER) ? $_SERVER : $_SERVER->toArray(),
             $request->getBody()->getContents()
         );
     }
