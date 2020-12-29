@@ -76,7 +76,7 @@ class WeChatController extends AbstractController
 ##### 使用外观
 
 ```php
-  use \Cexll\HyperfWechat\EasyWechat;
+  use Cexll\HyperfWechat\EasyWechat;
   $officialAccount = EasyWechat::officialAccount(); // 公众号
   $work = EasyWechat::work(); // 企业微信
   $payment = EasyWechat::payment(); // 微信支付
