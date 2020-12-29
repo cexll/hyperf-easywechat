@@ -5,7 +5,7 @@
 
 ## 安装
 ~~~shell script
-composer require cexll/hyperf-wechat-my
+composer require cexll/hyperf-easywechat
 ~~~
 
 
