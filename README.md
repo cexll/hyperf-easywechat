@@ -1,3 +1,9 @@
+# Notice
+Swoole 4.6.0 开始已经支持协程Curl 所以这个项目没有继续维护的价值
+
+如果是Swoole 4.6.0以下版本可以继续使用
+
+
 # hyperf-wechat
 
 微信 SDK for Hyperf， 基于 overtrue/wechat
